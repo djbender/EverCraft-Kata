@@ -1,5 +1,7 @@
 # The EverCraft Kata
 
+- ruby: ![ruby travis-ci](https://api.travis-ci.org/djbender/EverCraft-Kata.svg?branch=master)
+
 In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
 follow the requirements below, pairing and test driving your code of course, and have fun.
 
@@ -60,8 +62,8 @@ As a character I want to have several abilities so that I am not identical to ot
 
 <pre>
          +------+------+------+------+------+------+------+------+------+------+
-Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |  
-Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |  
+Score    |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |  10  |
+Modifier |  -5  |  -4  |  -4  |  -3  |  -3  |  -2  |  -2  |  -1  |  -1  |   0  |
          +------+------+------+------+------+------+------+------+------+------+
 Score    |  11  |  12  |  13  |  14  |  15  |  16  |  17  |  18  |  19  |  20  |
 Modifier |   0  |  +1  |  +1  |  +2  |  +2  |  +3  |  +3  |  +4  |  +4  |  +5  |
@@ -90,7 +92,7 @@ As a character I want to accumulate experience points when I attack my enemies s
 As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes
 
 - Level defaults to 1
-- After 1000 experience points, the character gains a level 
+- After 1000 experience points, the character gains a level
     - 0 xp -> 1st Level
     - 1000 xp -> 2nd Level
     - 2000 xp -> 3rd Level
@@ -260,7 +262,7 @@ As an elf I want to be able to wear elven chain mail so that I can fit in with a
 
 - +5 to Armor Class
 - +8 to Armor Class if worn by an elf
-- +1 to attack if worn by an elf 
+- +1 to attack if worn by an elf
 
 ### Feature: Items
 
