@@ -1,3 +1,6 @@
+require 'dice'
+
+# Character
 class Character
   attr_accessor :name, :alignment, :armor_class, :hit_points
 
@@ -6,5 +9,19 @@ class Character
     self.alignment = alignment
     self.armor_class = armor_class
     self.hit_points = hit_points
+  end
+
+  def attack(defender)
+    if roll_dice >= defender.armor_class
+      :success
+    else
+      :failure
+    end
+  end
+
+  private
+
+  def roll_dice
+    Dice.roll
   end
 end
